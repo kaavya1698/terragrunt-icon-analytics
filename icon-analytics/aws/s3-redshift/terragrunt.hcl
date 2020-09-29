@@ -20,6 +20,6 @@ dependency "airflow" {
 }
 
 inputs = {
-  block_dump_bucket = "icon-dump-${local.vars.env}"
+  block_dump_bucket = "icon-redshift-dump-${local.vars.env}"
   airflow_instance_profile_name = dependency.airflow.outputs.instance_profile_name
 }
